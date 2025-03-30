@@ -4,20 +4,20 @@ solvers_descriptions = {
         "function": {
             "name": "solver_1",
             "description": "Gives output of a specific command in VS code",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "command": {
-                        "type": "string",
-                        "description": "the command whose output is required"
-                    },
-                    
+            # "parameters": {
+            #     "type": "object",
+            #     "properties": {
+            #         "command": {
+            #             "type": "string",
+            #             "description": "the command whose output is required"
+            #         },
 
-                },
-                "required": ["command"],
-                "additionalProperties": False
-            },
-            "strict": True
+
+            #     },
+            #     "required": ["command"],
+            #     "additionalProperties": False
+            # },
+            # "strict": True
         }
     },
 
@@ -41,7 +41,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the value set to the parameter"
                     }
-                    
+
 
                 },
                 "required": ["url", "param", "value"],
@@ -67,7 +67,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the command whose output is required"
                     },
-                    
+
 
                 },
                 "required": ["req_filename", "command"],
@@ -89,7 +89,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the Google Sheets formula"
                     },
-                    
+
 
                 },
                 "required": ["formula"],
@@ -111,7 +111,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the Microsoft Excel formula"
                     },
-                    
+
 
                 },
                 "required": ["formula"],
@@ -133,7 +133,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the HTML element"
                     },
-                    
+
 
                 },
                 "required": ["html_element"],
@@ -163,14 +163,14 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the end date"
                     }
-                    
+
 
                 },
                 "required": ["day_name", "start_date", "end_date"],
                 "additionalProperties": False
             },
             "strict": True
-    }
+        }
     },
 
     8: {
@@ -189,7 +189,7 @@ solvers_descriptions = {
                     "column_name": {
                         "type": "string",
                         "description": "the name of the column"
-                    }             
+                    }
 
                 },
                 "required": ["csv_file", "column_name"],
@@ -219,7 +219,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the second field for sorting"
                     }
-                    
+
 
                 },
                 "required": ["json_array", "first_field", "second_field"],
@@ -237,7 +237,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-                    
+
 
                 },
                 "required": [],
@@ -271,7 +271,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "it is termed as the hidden HTML but this is the html that is passed along with the prompt"
                     }
-                    
+
 
                 },
                 "required": ["html_element", "given_class", "given_attribute", "hidden_html"],
@@ -325,7 +325,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the encoding of the third file"
                     }
-                    
+
 
                 },
                 "required": ["symbol_1", "symbol_2", "symbol_3", "file_1", "encoding_1", "file_2", "encoding_2", "file_3", "encoding_3"],
@@ -351,7 +351,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the value to be committed"
                     }
-                    
+
 
                 },
                 "required": ["file_name", "value"],
@@ -381,7 +381,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the command to be run"
                     }
-                    
+
 
                 },
                 "required": ["existing_word", "new_word", "command"],
@@ -407,7 +407,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the date string in the format %a, %d %b, %Y, %I:%M %p %Z"
                     }
-                    
+
 
                 },
                 "required": ["file_size_number", "date_string"],
@@ -429,7 +429,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the command to be run"
                     }
-                    
+
 
                 },
                 "required": ["command"],
@@ -455,7 +455,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the name of the second file"
                     }
-                    
+
 
                 },
                 "required": ["file_1", "file_2"],
@@ -477,7 +477,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the string containing the type of ticket"
                     }
-                    
+
 
                 },
                 "required": ["ticket_type"],
@@ -495,7 +495,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-            
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -512,7 +512,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-            
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -533,7 +533,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the email ID"
                     }
-                    
+
 
                 },
                 "required": ["email_id"],
@@ -577,7 +577,7 @@ solvers_descriptions = {
                         "type": "number",
                         "description": "the minimum brightness as described in the python code snippet"
                     }
-            
+
                 },
                 "required": ["lightness_threshold"],
                 "additionalProperties": False
@@ -594,7 +594,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-            
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -615,7 +615,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the email ID"
                     }
-                    
+
 
                 },
                 "required": ["email"],
@@ -637,7 +637,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the tag to be added"
                     }
-                    
+
 
                 },
                 "required": ["tag"],
@@ -696,7 +696,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the meaningless text"
                     }
-                    
+
 
                 },
                 "required": ["model_name", "meaningless_text"],
@@ -718,7 +718,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the user message given in the prompt for which the input tokens are to be calculated. It is the paragrapth after the sentence - 'Specifically, when you make a request to OpenAI's GPT-4o-Mini with just this user message:' in the prompt and before the sentence: '... how many input tokens does it use up?' in the prompt"
                     }
-                    
+
 
                 },
                 "required": ["user_message"],
@@ -737,31 +737,31 @@ solvers_descriptions = {
                 "type": "object",
                 "properties": {
                     "required_fields": {
-                    "type": "array",
-                    "description": "Array of the required fields",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                        "field_name": {
-                            "type": "string",
-                            "description": "Name of the field"
-                        },
-                        "field_type": {
-                            "type": "string",
-                            "description": "Type of the field",
-                            "enum": ["string", "number", "boolean", "date", "object"]
+                        "type": "array",
+                        "description": "Array of the required fields",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "field_name": {
+                                    "type": "string",
+                                    "description": "Name of the field"
+                                },
+                                "field_type": {
+                                    "type": "string",
+                                    "description": "Type of the field",
+                                    "enum": ["string", "number", "boolean", "date", "object"]
+                                }
+                            },
+                            "required": ["field_name", "field_type"],
+                            "additionalProperties": False
                         }
-                        },
-                        "required": ["field_name", "field_type"],
-                        "additionalProperties": False
-                    }
                     },
-              
+
                     "additionalPropertiesBoolean": {
                         "type": "boolean",
                         "description": "the boolean value for additional properties"
                     }
-                    
+
 
                 },
                 "required": ["required_fields", "additionalPropertiesBoolean"],
@@ -803,7 +803,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the second verification message"
                     }
-                    
+
                 },
                 "required": ["verification_message_1", "verification_message_2"],
                 "additionalProperties": False
@@ -837,7 +837,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-                    
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -854,7 +854,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
-                    
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -875,7 +875,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the page number"
                     }
-                    
+
                 },
                 "required": ["page_number"],
                 "additionalProperties": False
@@ -901,7 +901,7 @@ solvers_descriptions = {
                         "description": "the end rating"
                     }
 
-                    
+
                 },
                 "required": ["ratings_start", "ratings_end"],
                 "additionalProperties": False
@@ -918,7 +918,7 @@ solvers_descriptions = {
             "parameters": {
                 "type": "object",
                 "properties": {
- 
+
                 },
                 "required": [],
                 "additionalProperties": False
@@ -939,7 +939,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the city for which the weather forecast is required"
                     }
-                    
+
                 },
                 "required": ["required_city"],
                 "additionalProperties": False
@@ -968,7 +968,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the country name"
                     }
-                    
+
                 },
                 "required": ["maximum_or_minimum", "city_name", "country_name"],
                 "additionalProperties": False
@@ -993,7 +993,7 @@ solvers_descriptions = {
                         "type": "number",
                         "description": "the minimum points"
                     }
-                    
+
                 },
                 "required": ["mentioning_word", "minimum_points"],
                 "additionalProperties": False
@@ -1018,7 +1018,7 @@ solvers_descriptions = {
                         "type": "number",
                         "description": "the followers count"
                     }
-                    
+
                 },
                 "required": ["city_name", "followers_count"],
                 "additionalProperties": False
@@ -1039,7 +1039,7 @@ solvers_descriptions = {
                         "type": "string",
                         "description": "the email ID"
                     }
-                    
+
                 },
                 "required": ["email"],
                 "additionalProperties": False
@@ -1076,7 +1076,7 @@ solvers_descriptions = {
                         "type": "number",
                         "description": "the end group number, that is the ending group number in the condition"
                     }
-                    
+
                 },
                 "required": ["subject_whose_marks_to_be_calculated", "marks_in_criterion_subject", "criterion_subject", "group_start_number", "group_end_number"],
                 "additionalProperties": False
@@ -1323,27 +1323,27 @@ solvers_descriptions = {
     },
 
     56: {
-    "type": "function",
-    "function": {
-        "name": "solver_56",
-        "description": "Reconstruct the image by moving the pieces from the scrambled position to the original position as per the given {mappings}",
-        "parameters": {
-            "type": "object",
-            "properties": {
+        "type": "function",
+        "function": {
+            "name": "solver_56",
+            "description": "Reconstruct the image by moving the pieces from the scrambled position to the original position as per the given {mappings}",
+            "parameters": {
+                "type": "object",
+                "properties": {
 
+                },
+                "required": [],
+                "additionalProperties": False
             },
-            "required": [],
-            "additionalProperties": False
-        },
-        "strict": True
+            "strict": True
+        }
     }
-}
 
 
 
 
 
-    
+
 
 
 
